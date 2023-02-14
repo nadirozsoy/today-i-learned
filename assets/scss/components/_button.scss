@@ -1,0 +1,36 @@
+.btn {
+  font-size: 1.7rem;
+  font-family: $font-primary;
+  line-height: 1;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  padding: 1.6rem 0 1.3rem;
+  color: inherit;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  cursor: pointer;
+  transition: $transition-1;
+
+  &:hover {
+    transform: scale(1.05) rotate(-5deg);
+  }
+
+  &:active {
+    transform: translateY(-1px) scale(1.05) rotate(-5deg);
+  }
+}
+
+.btn-lg {
+  font-size: 2rem;
+  padding: 2rem 3rem 1.7rem;
+}
+
+.btn-all-categories {
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}

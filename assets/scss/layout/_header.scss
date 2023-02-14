@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  &__logo {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &__btn {
+    margin-left: auto;
+  }
+}
