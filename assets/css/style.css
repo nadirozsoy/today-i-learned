@@ -95,6 +95,10 @@ ul {
   margin-bottom: 4rem;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .btn {
   font-size: 1.7rem;
   font-family: "Coiny", sans-serif;
