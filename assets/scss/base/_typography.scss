@@ -6,6 +6,10 @@ body {
   background-color: $color-secondary;
   font-family: $font-secondary;
   padding: 4rem 6rem;
+
+  @media only screen and (max-width: $bp-md-1) {
+    padding: 3rem 4rem;
+  }
 }
 
 .heading-1 {
@@ -13,6 +17,15 @@ body {
   text-transform: uppercase;
   font-family: $font-primary;
   margin-top: 6px;
+
+  @media only screen and (max-width: $bp-md-1) {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  @media only screen and (max-width: $bp-sm-2) {
+    font-size: 3rem;
+  }
 }
 
 ul {

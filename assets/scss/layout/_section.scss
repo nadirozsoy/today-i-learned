@@ -10,6 +10,16 @@
     align-items: center;
     gap: 2.4rem;
     letter-spacing: -1px;
+    border-radius: 16px;
+
+    @media only screen and (max-width: $bp-lg-1) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media only screen and (max-width: $bp-sm-1) {
+      letter-spacing: 0px;
+    }
   }
 
   &__text {
@@ -44,5 +54,29 @@
 
   &__vote-buttons {
     margin-left: auto;
+    display: flex;
+    gap: 1rem;
+
+    button {
+      background-color: #57534e;
+      border-radius: 100px;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1.8rem;
+      color: inherit;
+      font-family: $font-secondary;
+      font-weight: 600;
+      cursor: pointer;
+      transition: $transition-1;
+      white-space: nowrap;
+
+      @media only screen and (max-width: $bp-sm-2) {
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        background-color: $color-secondary;
+      }
+    }
   }
 }

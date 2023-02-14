@@ -11,6 +11,11 @@
   cursor: pointer;
   transition: $transition-1;
 
+  @media only screen and (max-width: $bp-sm-2) {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem 0.7rem;
+  }
+
   &:hover {
     transform: scale(1.05) rotate(-5deg);
   }
@@ -23,6 +28,11 @@
 .btn-lg {
   font-size: 2rem;
   padding: 2rem 3rem 1.7rem;
+
+  @media only screen and (max-width: $bp-sm-2) {
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem 0.7rem;
+  }
 }
 
 .btn-all-categories {

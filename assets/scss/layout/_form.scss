@@ -2,4 +2,72 @@
   background-color: $color-secondary-light;
   padding: 1.6rem 2.4rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+
+  @media only screen and (max-width: $bp-md-2) {
+    display: grid;
+    row-gap: 1.5rem;
+  }
+
+  & > *:not(:last-child) {
+    margin-right: 2rem;
+    @media only screen and (max-width: $bp-md-2) {
+      margin-right: 0;
+    }
+  }
+
+  input,
+  select {
+    background-color: $color-secondary-light-2;
+    border: none;
+    border-radius: 100px;
+    padding: 1.6rem;
+    display: inline-block;
+    color: inherit;
+    font-family: inherit;
+
+    &::placeholder {
+      color: $color-secondary-light-3;
+
+      @media only screen and (max-width: $bp-sm-2) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  input:nth-of-type(1) {
+    flex: 1;
+    margin-right: 0.5rem;
+  }
+
+  button {
+    @media only screen and (max-width: $bp-md-2) {
+      justify-self: center;
+      width: 50%;
+    }
+  }
+
+  select {
+    cursor: pointer;
+    @media only screen and (max-width: $bp-md-2) {
+      justify-self: center;
+      width: 30%;
+    }
+
+    @media only screen and (max-width: $bp-md-3) {
+      width: 40%;
+    }
+
+    @media only screen and (max-width: $bp-sm-2) {
+      width: 90%;
+    }
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+  }
 }

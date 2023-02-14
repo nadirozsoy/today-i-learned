@@ -3,4 +3,8 @@
   margin: 0 auto;
   display: grid;
   row-gap: 4rem;
+
+  @media only screen and (max-width: $bp-sm-2) {
+    row-gap: 2rem;
+  }
 }

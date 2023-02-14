@@ -6,8 +6,10 @@ $color-primary: #fafaf9;
 
 $color-secondary: #292524;
 $color-secondary-light: #44403c;
+$color-secondary-light-2: #78716c;
+$color-secondary-light-3: #a8a29e;
 
-$transition-1: all 0.2s;
+$transition-1: 0.2s;
 // $transition-2: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 
 // $shadow-1: 0 0 1.3rem rgba(#000, 0.6);
@@ -20,9 +22,10 @@ $font-secondary: 'Sono', sans-serif;
 
 // MEDIA QUERY
 
-// $bp-lg-1: 75em; // 1200/16 = 75
-// $bp-lg-2: 68.75em; // 1100/16 = 68.75
-// $bp-md-1: 62.5em; // 1000/16 = 62.5
-// $bp-md-2: 50em; // 800/16 = 50
-// $bp-sm-1: 40.625em; // 650/16 = 40.625
-// $bp-sm-2: 28.125em; // 450/16 = 28.125
+$bp-lg-1: 75em; // 1200/16 = 75
+$bp-lg-2: 68.75em; // 1100/16 = 68.75
+$bp-md-1: 62.5em; // 1000/16 = 62.5
+$bp-md-2: 56.25em; // 900/16 = 56.25
+$bp-md-3: 50em; // 800/16 = 50
+$bp-sm-1: 46.875em; // 750/16 = 46.875
+$bp-sm-2: 28.125em; // 450/16 = 28.125
