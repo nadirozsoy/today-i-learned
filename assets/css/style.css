@@ -168,6 +168,7 @@ ul {
 }
 .header__btn {
   margin-left: auto;
+  transition: 0.2s;
 }
 @media only screen and (max-width: 28.125em) {
   .header__btn {

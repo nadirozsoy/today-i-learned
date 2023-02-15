@@ -19,6 +19,7 @@
 
   &__btn {
     margin-left: auto;
+    transition: $transition-1;
 
     @media only screen and (max-width: $bp-sm-2) {
       width: 50%;
