@@ -1,6 +1,7 @@
 const NewFactForm = () => {
+
     return (
-        <form className="fact-form hidden">
+        <form className="fact-form">
             <input type="text" placeholder="Share a fact with the world..." /><span>200</span>
             <input type="text" placeholder="Trustworthy spurce..." />
             <select name="" id="">
