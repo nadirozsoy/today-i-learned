@@ -10,11 +10,8 @@ import Loader from './components/Loader/Loader'
 const App = () => {
   //1. define state var
   const [showForm, setShowForm] = useState(false)
-
   const [facts, setFacts] = useState([])
-
   const [isLoading, setIsLoading] = useState(false)
-
   const [currentCategory, setCurrentCategory] = useState('all')
 
   useEffect(() => {
@@ -57,7 +54,14 @@ const App = () => {
         {/* MAİN */}
         <main className="main">
           <MainCategory setCurrentCategory={setCurrentCategory} />
-          {isLoading ? <Loader /> : <Section facts={facts} />}
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <Section
+              facts={facts}
+              setFacts={setFacts}
+            />
+          )}
         </main>
       </div>
     </>
