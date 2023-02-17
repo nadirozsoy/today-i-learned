@@ -30,14 +30,14 @@
         text-decoration: none;
         color: #a8a29e;
         margin-left: 1.4rem;
-        // background-color: $color-grey-dark-3;
         display: inline-block;
         transition: $transition-1;
       }
 
       &:hover,
       &:active {
-        color: blue;
+        transform: scale(1.02) rotate(-2deg);
+        color: #fff;
       }
     }
   }

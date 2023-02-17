@@ -9,16 +9,16 @@ const CATEGORIES = [
     { name: 'news', color: '#8b5cf6' },
 ]
 
-const MainCategory = () => {
+const MainCategory = ({ setCurrentCategory }) => {
     return (
         <aside>
             <ul>
                 <li className="main__category">
-                    <button className="btn btn-all-categories">All</button>
+                    <button className="btn btn-all-categories" onClick={() => setCurrentCategory("all")}>All</button>
                 </li>
                 {CATEGORIES.map((cat) =>
                     <li key={cat.name} className="main__category">
-                        <button className="btn btn-category" style={{ backgroundColor: cat.color }}>{cat.name}</button>
+                        <button className="btn btn-category" style={{ backgroundColor: cat.color }} onClick={() => setCurrentCategory(cat.name)}>{cat.name}</button>
                     </li>
                 )}
             </ul>

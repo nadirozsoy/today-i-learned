@@ -1,6 +1,12 @@
 import Fact from './Fact/Fact'
 
 const Section = ({ facts }) => {
+    if (facts.length === 0)
+        return (
+            <p className='message'>No facts for this category yet! Create the first one 🎃</p>
+        )
+
+
     return (
         <section className="section">
             <ul className="facts-list">
@@ -8,6 +14,7 @@ const Section = ({ facts }) => {
                     <Fact key={fact.id} fact={fact} />
                 ))}
             </ul>
+            <h3>There are {facts.length} facts in the database. Add your own 🤠</h3>
         </section>
 
     )
