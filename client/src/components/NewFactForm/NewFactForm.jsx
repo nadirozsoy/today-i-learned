@@ -23,8 +23,8 @@ const isValidHttpUrl = (string) => {
 }
 
 const NewFactForm = ({ setFacts, setShowForm }) => {
-    const [text, setText] = useState("")
-    const [source, setSource] = useState("")
+    const [text, setText] = useState('')
+    const [source, setSource] = useState('')
     const [category, setCategory] = useState("")
     const [isUploading, setIsUploading] = useState(false)
     const textLength = text.length

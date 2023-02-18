@@ -2,9 +2,11 @@
   display: grid;
   grid-template-columns: 25rem 1fr;
   gap: 2rem;
+  height: calc(100vh - 4rem - 7.8rem - 8rem);
 
   @media only screen and (max-width: $bp-md-2) {
     grid-template-columns: 1fr;
+    height: auto;
   }
 
   &__category {
@@ -24,4 +26,9 @@
   @media only screen and (max-width: $bp-sm-2) {
     font-size: 2rem;
   }
+}
+
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
 }

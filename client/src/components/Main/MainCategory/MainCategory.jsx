@@ -12,7 +12,7 @@ const CATEGORIES = [
 const MainCategory = ({ setCurrentCategory }) => {
     return (
         <aside>
-            <ul>
+            <ul className='sidebar'>
                 <li className="main__category">
                     <button
                         className="btn btn-all-categories"

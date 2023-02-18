@@ -4,8 +4,6 @@ const Header = ({ setShowForm, showForm }) => {
             <img
                 src="logo.png"
                 alt="Today I Learned"
-                height="68"
-                width="68"
                 className="header__logo"
             />
             <h1 className="heading-1">Today I Learned</h1>

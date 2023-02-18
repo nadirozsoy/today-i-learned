@@ -18,15 +18,11 @@
 
 <div align="Center">
 
-## Screenshots
-
-
 </div>
 
 <div align="Center">
 
 ### Desktop
-
 
 </div>
 
@@ -35,7 +31,6 @@
 <div align="Center">
 
 ### Mobile
-
 
 </div>
 
